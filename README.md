@@ -11,7 +11,7 @@ If you've used RequireJS before, you're probably in love with it. Ever wondered 
 
 This plugin automatically loads your scripts behind the scenes, adding a script to the `<head>` in the format: 
 
-`<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/plugins/WordPress-plugin-with-RequireJS/js/lib/require.js?ver=1.0' data-main='http://localhost:8888/wordpress/wp-content/plugins/WordPress-plugin-with-RequireJS/js/app'></script>`
+`<script type='text/javascript' src='http://mypluginpath/js/lib/require.js?ver=1.0' data-main='http://mypluginpath/js/app'></script>`
 
 `require.js` is loaded synchronously, and the `data-main` attribute loads your application code in asynchronously. 
 
