@@ -24,7 +24,6 @@ class My_Plugin_Controller {
   // Enqueue scripts front-end
   function add_myplugin_scripts() {
     wp_enqueue_script('require', MY_PLUGIN_URL . 'js/lib/require.js', false, MY_PLUGIN_VERSION);
-    wp_localize_script( 'require', '_sr_ajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
   }
 
   /*
