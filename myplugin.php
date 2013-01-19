@@ -23,13 +23,4 @@ include_once ('controller.php');
 // Create the controller - this is what runs everything else
 $fbOgAction = new My_Plugin_Controller;
 
-// Activation hooks (can't go in the model construct for some reason - I think they run before the model is created)
-register_activation_hook( __FILE__, array('My_Plugin_Model', 'install'));
-register_activation_hook( __FILE__, array('My_Plugin_Model', 'activate'));
-register_deactivation_hook( __FILE__, array('My_Plugin_Model', 'deactivate'));
-register_uninstall_hook( __FILE__, array('My_Plugin_Model', 'uninstall'));	
-
-
-
-
 ?>
